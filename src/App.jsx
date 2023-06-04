@@ -42,7 +42,7 @@ const App = () => {
           </div>
               <ul>
                   {contacts.map((contact, index) => (
-                      <li key={index} style={{ color: contact.isConnected ? "green" : "red"}}>
+                      <li key={index} style={{ color: contact.isConnected ? "limegreen" : "red"}}>
                           {contact.name} - {contact.isConnected ? 'Conectado' : 'Desconectado'}
                           <button onClick={() => toggleStatus(index)}>Toggle Status</button>
                           <button onClick={() => deleteContact(index)}>Delete</button>
